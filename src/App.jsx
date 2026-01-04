@@ -15,7 +15,7 @@ Accessibility is not treated as a separate feature. It is foundational. Motion i
 This reader is not trying to replace books or articles. It is trying to create a better container for them. One that respects different reading styles and different cognitive states. Some days you move quickly. Other days you need space. Both are valid.
 
 Over time, the hope is that reading feels less like consumption and more like presence. You are not skimming past ideas. You are spending time with them. One character at a time, at a speed that belongs to you.
-`;
+";
 
 export default function App() {
   const [index, setIndex] = useState(0);
