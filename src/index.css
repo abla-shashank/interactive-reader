@@ -16,24 +16,36 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.reader span {
+/* Reader container */
+.reader {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  cursor: text;
+}
+
+/* Base character state: unread */
+.char {
   display: inline-block;
-  margin-right: 0.25rem;
-  opacity: 0.35;
-  transition: transform 0.3s ease, text-shadow 0.3s ease, opacity 0.3s ease;
+  margin-right: 0.12rem;
+  opacity: 0.8;
+  font-weight: 400;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease, font-weight 0.3s ease;
 }
 
-.reader span.active {
+/* Previously read characters */
+.char.read {
   opacity: 1;
-  transform: scale(1.06);
-  text-shadow: 0 0 14px rgba(96, 165, 250, 0.9);
+  font-weight: 600;
 }
 
-.reader span.read {
-  opacity: 0.85;
-  text-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+/* Currently active character */
+.char.active {
+  opacity: 1;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(96, 165, 250, 0.9);
 }
 
+/* Controls */
 .controls {
   margin-top: 2rem;
   display: flex;
@@ -60,9 +72,10 @@ input[type="range"] {
   width: 160px;
 }
 
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .reader span {
+  .char {
     transition: none;
-    transform: none;
+    text-shadow: none;
   }
 }
