@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-const text =
-  "const text = `
+const text = `
 Reading is supposed to feel natural, but for many people it quietly becomes exhausting. The eyes move faster than the mind, attention drifts, and the act of reading turns into effort rather than flow. This reader is built to slow things down just enough so focus can return without force.
 
 Instead of asking you to adapt to text, the text adapts to you. Each character appears with intention. What you have already read stays visible and grounded, while what is coming next waits patiently. The goal is not speed for the sake of speed. It is rhythm. A pace that feels steady rather than rushed.
@@ -15,7 +14,7 @@ Accessibility is not treated as a separate feature. It is foundational. Motion i
 This reader is not trying to replace books or articles. It is trying to create a better container for them. One that respects different reading styles and different cognitive states. Some days you move quickly. Other days you need space. Both are valid.
 
 Over time, the hope is that reading feels less like consumption and more like presence. You are not skimming past ideas. You are spending time with them. One character at a time, at a speed that belongs to you.
-";
+`;
 
 export default function App() {
   const [index, setIndex] = useState(0);
