@@ -1,2 +1,2 @@
 # interactive-reader
-Make reading fun
+trying to make reading easy.
