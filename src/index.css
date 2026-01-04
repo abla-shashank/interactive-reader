@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reader span {
+  display: inline-block;
+  margin-right: 0.25rem;
+  opacity: 0.35;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.reader span.active {
+  opacity: 1;
+  transform: scale(1.06);
+  text-shadow: 0 0 14px rgba(96, 165, 250, 0.9);
+}
+
+.reader span.read {
+  opacity: 0.85;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+}
+
+.controls {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+input[type="range"] {
+  width: 160px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reader span {
+    transition: none;
+    transform: none;
+  }
+}

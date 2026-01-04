@@ -4,39 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Reader</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        background: #0f172a;
-        color: #e5e7eb;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      .box {
-        text-align: center;
-        max-width: 600px;
-        padding: 2rem;
-      }
-      h1 {
-        font-size: 2.2rem;
-        margin-bottom: 0.5rem;
-      }
-      p {
-        opacity: 0.8;
-        line-height: 1.6;
-      }
-    </style>
   </head>
   <body>
-    <div class="box">
-      <h1>Interactive Reader</h1>
-      <p>
-        This project is under active development.<br />
-        Making reading more accessible, one sentence at a time.
-      </p>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
